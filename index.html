@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel Dialer - Safe & Simple Calling for Loved Ones</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #D4DDD4 0%, #b8c5b8 100%);
+            min-height: 100vh;
+            color: #2D3830;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #2D3830;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            color: #4a5a4a;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #2D5016;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #1e3a0f;
+        }
+        
+        .features {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .features h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2D3830;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+        
+        .feature:last-child {
+            margin-bottom: 0;
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-right: 20px;
+            min-width: 50px;
+            text-align: center;
+        }
+        
+        .feature h3 {
+            color: #2D5016;
+            margin-bottom: 5px;
+        }
+        
+        .feature p {
+            color: #5a6a5a;
+            line-height: 1.5;
+        }
+        
+        .perfect-for {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .perfect-for h2 {
+            margin-bottom: 20px;
+            color: #2D3830;
+        }
+        
+        .perfect-for ul {
+            list-style: none;
+            color: #5a6a5a;
+            line-height: 2;
+        }
+        
+        .privacy-note {
+            background: #2D3830;
+            color: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .privacy-note h3 {
+            margin-bottom: 10px;
+        }
+        
+        .privacy-note p {
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        
+        .privacy-note a {
+            color: #a8d8a8;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #4a5a4a;
+        }
+        
+        footer a {
+            color: #2D5016;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .features, .perfect-for, .privacy-note {
+                padding: 25px;
+            }
+            
+            .feature {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .feature-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Shield shape -->
+                <path d="M50 5 L90 20 L90 50 C90 75 50 95 50 95 C50 95 10 75 10 50 L10 20 Z" 
+                      fill="#2D5016" stroke="#1e3a0f" stroke-width="3"/>
+                <!-- Phone icon -->
+                <path d="M35 35 C35 35 38 32 42 35 L48 41 C50 43 50 46 48 48 L46 50 C46 50 48 55 55 62 C62 69 67 71 67 71 L69 69 C71 67 74 67 76 69 L82 75 C85 79 82 82 82 82 C75 89 62 85 50 73 C38 61 34 48 41 41 Z" 
+                      fill="#f5f5f0"/>
+                <!-- Red notification dot -->
+                <circle cx="78" cy="22" r="10" fill="#DC2626"/>
+            </svg>
+            <h1>Sentinel Dialer</h1>
+            <p class="tagline">Safe, Simple, Protective Calling for Loved Ones</p>
+            <a href="#" class="cta-button">Coming Soon on Google Play</a>
+        </header>
+        
+        <section class="features">
+            <h2>Designed to Protect</h2>
+            
+            <div class="feature">
+                <div class="feature-icon">🛡️</div>
+                <div>
+                    <h3>Pre-Call Warnings</h3>
+                    <p>Every call shows a personalized warning screen, giving your loved one a moment to pause and think before dialing. Prevents accidental calls and scam callbacks.</p>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">👆</div>
+                <div>
+                    <h3>Simple & Clear</h3>
+                    <p>Large contact cards in an easy two-column grid. No confusing menus, no tiny buttons. Just tap the person you want to call.</p>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🚨</div>
+                <div>
+                    <h3>Quick Emergency Access</h3>
+                    <p>911 is always one tap away, with a two-step confirmation to prevent accidental emergency calls.</p>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🔐</div>
+                <div>
+                    <h3>Caregiver Controls</h3>
+                    <p>PIN-protected settings let caregivers choose which contacts appear, customize warning messages, and manage the phone experience remotely.</p>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">👁️</div>
+                <div>
+                    <h3>Accessibility First</h3>
+                    <p>Light and dark themes, colorblind mode, large touch targets, and haptic feedback. Designed for real-world usability.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="perfect-for">
+            <h2>Perfect For</h2>
+            <ul>
+                <li>Elderly parents with memory challenges</li>
+                <li>Anyone who wants a simpler phone experience</li>
+                <li>Caregivers managing a loved one's phone</li>
+            </ul>
+        </section>
+        
+        <section class="privacy-note">
+            <h3>Your Privacy Matters</h3>
+            <p>All data stays on the device. No accounts required. No ads. No tracking.</p>
+            <a href="https://rlmoulton1964.github.io/sentinel-privacy/">Read our Privacy Policy</a>
+        </section>
+        
+        <footer>
+            <p>Built with love to protect the ones who matter most.</p>
+            <p style="margin-top: 10px;">© 2025 Rapidocity.ai | <a href="mailto:rlm.rapidocity.ai@gmail.com">Contact</a></p>
+        </footer>
+    </div>
+</body>
+</html>
